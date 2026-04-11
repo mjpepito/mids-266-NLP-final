@@ -1,4 +1,3 @@
-```markdown
 # Gen Z Slang Translation + Action/Emotion Analysis
 
 **UC Berkeley MIDS — W266 Natural Language Processing Final Project**
@@ -88,4 +87,3 @@ The Gradio demo lets you:
 ## License
 
 This project was developed for academic purposes as part of UC Berkeley's MIDS program.
-```
