@@ -145,8 +145,8 @@ Run it from the notebook or use the standalone script at `notebooks/demo/gradio_
 ## Authors
 
 - Marvin Pepito
-- [Team member 2]
-- [Team member 3]
+- Jeevan Maddila
+- Ethan Chen
 
 ## License
 
