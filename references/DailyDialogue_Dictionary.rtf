@@ -1,0 +1,231 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 LucidaGrande;
+}
+{\colortbl;\red255\green255\blue255;\red24\green25\blue27;\red46\green49\blue51;\red238\green240\blue241;
+\red209\green212\blue217;\red109\green109\blue109;}
+{\*\expandedcolortbl;;\cssrgb\c12549\c12941\c14118;\cssrgb\c23529\c25098\c26275;\cssrgb\c94510\c95294\c95686;
+\cssrgb\c85490\c86275\c87843;\cssrgb\c50196\c50196\c50196;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid2\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa480\partightenfactor0
+
+\f0\b\fs40 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 DailyDialog: Multi-Turn Dialog+Intention+Emotion\
+\pard\pardeftab720\sa160\partightenfactor0
+
+\fs32 \cf2 Human-written dialogues with communication intention and emotion labels\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf3 \strokec3 The DailyDialog dataset is a meticulously curated collection of multi-turn dialogues that aims to accurately represent the way we communicate in our daily lives. It covers a wide range of topics that are relevant to our everyday experiences. What sets this dataset apart is that it includes human-written conversations, which means the language used is more natural and realistic, resulting in less noise and higher quality data.\
+Each dialogue in the dataset consists of two or more participants engaging in a conversation. The conversations are provided in textual form, allowing for easy analysis and processing. Alongside the dialogues, there are also corresponding labels for communication intention and emotion attached to each utterance.\
+The communication intention labels categorize each utterance based on its intended purpose or goal within the conversation. These categories provide valuable insights into how different participants express their intentions through speech.\
+In addition to the communication intention labels, there are also emotion labels assigned to each utterance in the dialogues. These emotion labels capture the emotional state or sentiment expressed by participants during various points in the conversation.\
+To facilitate model evaluation and testing, DailyDialog provides three separate files: validation.csv, train.csv, and test.csv. The validation set (validation.csv) contains dialogues with their respective communication intention and emotion labels for assessing model performance during development stages. The train set (train.csv) includes dialogues paired with corresponding communication intention and emotion labels for training purposes. Lastly, test.csv serves as an independent test set that enables evaluating models' proficiency by providing unseen dialogues along with their associated communication intention and emotion labels.\
+Overall, DailyDialog stands out as a high-quality dataset due to its accurate representation of daily life conversations paired with comprehensive labeling of both communication intentions and emotions expressed throughout these dialogues. This makes it an invaluable resource for developing robust dialogue systems capable of understanding human interactions on a deeper level while being able to identify diverse intentions behind speech acts alongside various emotional states encountered during daily life exchanges\
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b\fs32 \cf2 \strokec2 \
+\pard\pardeftab720\sa160\partightenfactor0
+\cf2 How to use the dataset\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs28 \cf3 \cb4 \strokec3 Welcome to the DailyDialog dataset! This high-quality multi-turn dialog dataset has been curated to reflect our daily communication style and covers a wide range of topics related to our everyday lives. The dataset consists of human-written conversations, making it less noisy and more realistic. Each conversation in the dataset has been manually labeled with communication intention and emotion information, providing valuable insights into the dialogues.\cf3 \cb1 \strokec3 \
+\cf3 \cb4 \strokec3 To make the most of this dataset, here is a step-by-step guide on how you can use it effectively:\cf3 \cb1 \strokec3 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Understanding the columns:\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls1\ilvl1\cf3 \cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 dialog: This column contains the actual conversation between two or more participants. It is in text format.\cb1 \
+\ls1\ilvl1\cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 act: The act column represents the communication intention labels for each utterance in the dialogue. These labels categorize each utterance based on its intention.\cb1 \
+\ls1\ilvl1\cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 emotion: The emotion column contains emotion labels for each utterance in the dialogue. These labels represent the emotions expressed during that particular utterance.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Familiarize yourself with validation.csv:\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls1\ilvl1\cf3 \cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 The validation.csv file serves as a validation set for evaluating your model's performance. It contains pre-labeled conversations along with their corresponding communication intentions and emotion labels.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Explore train.csv for training purposes:\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls1\ilvl1\cf3 \cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 The train.csv file is meant for training purposes and provides conversations along with their communication intentions and emotion labels.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Test your model using test.csv:\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls1\ilvl1\cf3 \cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	
+\f2 \uc0\u9702 
+\f1 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Test.csv file has conversation along ithentensions or emotional label which can be addressed once program is recreated.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 Finally, remember that this DailyDialog dataset offers an excellent opportunity to develop models capable of understanding multi-turn dialogues in a wide range of everyday scenarios. By utilizing both communication intention and emotion information provided, you can gain valuable insights into analyzing human conversations.\cf3 \cb1 \strokec3 \
+\cf3 \cb4 \strokec3 So dive into this rich resource, experiment with different techniques such as natural language processing and machine learning, and discover new ways of understanding and modeling human dialogues!\cf3 \cb1 \strokec3 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b\fs32 \cf2 \strokec2 Research Ideas\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls2\ilvl0
+\f1\b0\fs28 \cf3 \cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Natural Language Processing: This dataset can be used for training NLP models to understand and generate more realistic and human-like dialogues. The communication intention labels can help in identifying the purpose or goal of each utterance, while the emotion labels can add emotional context to the conversations.\cb1 \
+\ls2\ilvl0\cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Sentiment Analysis: With the emotion labels, this dataset can be used for sentiment analysis tasks to classify the overall sentiment of a conversation or individual utterances. It can be valuable for understanding customer feedback, social media discussions, and other text-based conversations.\cb1 \
+\ls2\ilvl0\cb4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Dialogue Generation: Using this dataset, one can train dialogue generation models that are capable of creating realistic and engaging conversations on various daily life topics. The communication intention labels can guide the model in generating appropriate responses based on different intents expressed in the dialogues\cb1 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b\fs32 \cf2 \strokec2 Columns\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs28 \cf3 \strokec3 File: validation.csv
+\f1\b0 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1089\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12990\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf3 Column name\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Description\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1089\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12990\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 \strokec2 dialog
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 This column contains the conversation between two or more participants in text format. (Text)\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1089\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12990\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf2 act
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 The act column represents the communication intention labels for each utterance in the dialogue. These labels categorize the purpose behind each participant's speech, such as asking a question, making a statement, or making a request. (Categorical)\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1089\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12990\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf2 emotion
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 The emotion column contains categorical labels that represent the emotions expressed by each participant during their utterances, such as anger, happiness, or sadness. (Categorical)\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+\cf6 \strokec6 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\b \cf3 \strokec3 File: train.csv
+\f1\b0 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1089\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12990\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf3 Column name\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Description\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1089\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12990\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 \strokec2 dialog
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 This column contains the conversation between two or more participants in text format. (Text)\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1089\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12990\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf2 act
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 The act column represents the communication intention labels for each utterance in the dialogue. These labels categorize the purpose behind each participant's speech, such as asking a question, making a statement, or making a request. (Categorical)\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1089\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12990\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf2 emotion
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 The emotion column contains categorical labels that represent the emotions expressed by each participant during their utterances, such as anger, happiness, or sadness. (Categorical)\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+\cf6 \strokec6 \
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\b \cf3 \strokec3 File: test.csv
+\f1\b0 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1089\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12990\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf3 Column name\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf3 Description\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1089\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12990\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 \strokec2 dialog
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 This column contains the conversation between two or more participants in text format. (Text)\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1089\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12990\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf2 act
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 The act column represents the communication intention labels for each utterance in the dialogue. These labels categorize the purpose behind each participant's speech, such as asking a question, making a statement, or making a request. (Categorical)\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1089\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12990\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf5 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt320 \clpadl320 \clpadb320 \clpadr320 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf2 emotion
+\f1\b0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 The emotion column contains categorical labels that represent the emotions expressed by each participant during their utterances, such as anger, happiness, or sadness. (Categorical)\cell \lastrow\row
+\pard\pardeftab720\sa480\partightenfactor0
+\cf3 \cb4 \strokec3 \
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\b\fs32 \cf2 \cb1 \strokec2 \
+\
+}
