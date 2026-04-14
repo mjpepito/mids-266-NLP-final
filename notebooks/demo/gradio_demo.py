@@ -130,6 +130,7 @@ def generate_candidates(text, direction, bart_tokenizer, bart_model, n=8):
             diversity_penalty=0.8,
             num_beam_groups=min(n, 4),
             no_repeat_ngram_size=3,
+            trust_remote_code=True,
         )
     candidates = [bart_tokenizer.decode(o, skip_special_tokens=True) for o in outputs]
     return list(dict.fromkeys(candidates))
